@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="selftest.androidstudysample2.MainActivity">
+
+    <ToggleButton
+        android:id="@+id/startSeviceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="110dp"
+        android:checked="false"
+        android:onClick="startServiceBtn_onClick"
+        android:text="ToggleButton"
+        android:textOff="Service OFF"
+        android:textOn="Service ON"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.501" />
+
+    <ToggleButton
+        android:id="@+id/bindServiceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="55dp"
+        android:text="ToggleBtn"
+        android:textOff="Service UNBIND"
+        android:textOn="Service BIND"
+        android:onClick="bindServiceBtn_onClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startSeviceBtn" />
+
+    <Button
+        android:id="@+id/btnAct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Act2"
+        android:onClick="btnAct2_onClick"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+</android.support.constraint.ConstraintLayout>
