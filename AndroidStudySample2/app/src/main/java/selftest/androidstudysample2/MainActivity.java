@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void bindServiceBtn_onClick(View view)
     {
-
         if(bindServiceBtn.isChecked())
         {
             Intent i = new Intent(this, MyService.class);
@@ -59,9 +58,6 @@ public class MainActivity extends AppCompatActivity {
         {
             stopService(i);
         }
-
-
-
     }
 
     private ServiceConnection connection = new ServiceConnection() {
