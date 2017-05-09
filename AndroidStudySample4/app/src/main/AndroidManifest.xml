@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="john.androidstudysample4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Sample4MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- MIME type 要與personContentProvider定義相同-->
+                <data android:mimeType="vnd.android.cursor.dir/sample4.person"/>
+                <data android:mimeType="vnd.android.cursor.item/sample4.person"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".PersonContentProvider"
+            android:authorities="android.study.sample.sample4"
+            android:enabled="true"
+            android:multiprocess="true"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>
